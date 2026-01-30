@@ -179,9 +179,9 @@ import muttonblackpepper from "../assets/nonveg/muttonblackpepper.jpeg";
 import fishfry from "../assets/nonveg/fishfry.jpeg";
 
 // // Main Course Chicken
-// import chickenaromasp from "../assets/nonveg/chickenaromasp.jpeg";
-// import chickenhandi from "../assets/nonveg/chickenhandi.jpeg";
-// import chickenmasala from "../assets/nonveg/chickenmasala.jpeg";
+import chickenaromasp from "../assets/nonveg/chickenaromasp.jpeg";
+import chickenhandi from "../assets/nonveg/chickenhandi.jpeg";
+import chickenmasala from "../assets/nonveg/chickenmasala.jpeg";
 // import butterchicken from "../assets/nonveg/butterchicken.jpeg";
 // import chickenafgani from "../assets/nonveg/chickenafgani.jpeg";
 // import chickenkolhapuri from "../assets/nonveg/chickenkolhapuri.jpeg";
@@ -372,9 +372,9 @@ export const menuImages = {
   "Paneer Takatak": paneertakatak,
 
   /* ---------- MAIN COURSE CHICKEN --------- */
-  // "Chicken Aroma Sp.": chickenaromasp,
-  // "Chicken Handi": chickenhandi,
-  // "Chicken Masala": chickenmasala,
+  "Chicken Aroma Sp.": chickenaromasp,
+  "Chicken Handi": chickenhandi,
+  "Chicken Masala": chickenmasala,
   // "Butter Chicken": butterchicken,
   // "Chicken Afgani": chickenafgani,
   // "Chicken Kolhapuri": chickenkolhapuri,
