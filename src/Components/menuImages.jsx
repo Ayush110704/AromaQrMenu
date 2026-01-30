@@ -111,24 +111,24 @@ import kadhaipaneer from "../assets/veg/kadhaipaneer.jpeg";
 import paneertakatak from "../assets/veg/paneertakatak.jpeg";
 
 // // Egg & Dal Veg
-// import plaindal from "../assets/veg/plaindal.jpeg";
-// import jiradal from "../assets/veg/jiradal.jpeg";
-// import dalfry from "../assets/veg/dalfry.jpeg";
-// import daltadka from "../assets/veg/daltadka.jpeg";
-// import dalkolhapuri from "../assets/veg/dalkolhapuri.jpeg";
-// import dalmughlai from "../assets/veg/dalmughlai.jpeg";
+import plaindal from "../assets/veg/plaindal.png";
+import jiradal from "../assets/veg/jiradal.png";
+import dalfry from "../assets/veg/dalfry.jpeg";
+import daltadka from "../assets/veg/daltadka.jpeg";
+import dalkolhapuri from "../assets/veg/dalkolhapuri.jpeg";
+import dalmughlai from "../assets/veg/dalmughlai.jpeg";
 
 // // Roti
-// import roti from "../assets/veg/roti.jpeg";
+import roti from "../assets/veg/roti.jpeg";
 // import butterroti from "../assets/veg/butterroti.jpeg";
-// import lachhaparatha from "../assets/veg/lachhaparatha.jpeg";
-// import butternan from "../assets/veg/butternan.jpeg";
-// import garlicnaan from "../assets/veg/garlicnaan.jpeg";
-// import cheesenan from "../assets/veg/cheesenan.jpeg";
-// import plainnan from "../assets/veg/plainnan.jpeg";
-// import alooparatha from "../assets/veg/alooparatha.jpeg";
-// import mixkulcha from "../assets/veg/mixkulcha.jpeg";
-// import butterkulcha from "../assets/veg/butterkulcha.jpeg";
+import lachhaparatha from "../assets/veg/lachhaparatha.jpeg";
+import butternan from "../assets/veg/butternan.jpeg";
+import garlicnaan from "../assets/veg/garlicnaan.jpeg";
+import cheesenan from "../assets/veg/cheesenan.jpeg";
+import plainnan from "../assets/veg/plainnan.jpeg";
+import alooparatha from "../assets/veg/alooparatha.jpeg";
+import mixkulcha from "../assets/veg/mixkulcha.jpeg";
+import butterkulcha from "../assets/veg/butterkulcha.jpeg";
 // import paneerkulcha from "../assets/veg/paneerkulcha.jpeg";
 // import plainkulcha from "../assets/veg/plainkulcha.jpeg";
 
@@ -211,8 +211,8 @@ import eggmasala from "../assets/nonveg/eggmasala.jpeg";
 import eggbhurji from "../assets/nonveg/eggbhurji.jpeg";
 import eggbhurjicurry from "../assets/nonveg/eggbhurjicurry.jpeg";
 import boilegg from "../assets/nonveg/boilegg.jpeg";
-// import eggomellete from "../assets/nonveg/eggomellete.jpeg";
-// import dalmughlainonveg from "../assets/nonveg/dalmughlainonveg.jpeg";
+import eggomellete from "../assets/nonveg/eggomellete.png";
+import dalmughlainonveg from "../assets/nonveg/dalmughlainonveg.jpeg";
 
 // // Rice Non-Veg
 // import chickenkashmiribiryani from "../assets/nonveg/chickenkashmiribiryani.jpeg";
@@ -404,26 +404,26 @@ export const menuImages = {
   "Egg Bhurji": eggbhurji,
   "Egg Bhurji Curry": eggbhurjicurry,
   "Boil Egg": boilegg,
-  // "Egg Omellete": eggomellete,
-  // "Plain Dal": plaindal,
-  // "Jira Dal": jiradal,
-  // "Dal Fry": dalfry,
-  // "Dal Tadka": daltadka,
-  // "Dal Kolhapuri": dalkolhapuri,
-  // "Dal Mughlai": dalmughlai,
-  // "Dal Mughlai (Non-Veg)": dalmughlainonveg,
+  "Egg Omellete": eggomellete,
+  "Plain Dal": plaindal,
+  "Jira Dal": jiradal,
+  "Dal Fry": dalfry,
+  "Dal Tadka": daltadka,
+  "Dal Kolhapuri": dalkolhapuri,
+  "Dal Mughlai": dalmughlai,
+  "Dal Mughlai (Non-Veg)": dalmughlainonveg,
 
   // /* ---------- ROTI ---------- */
-  // "Roti": roti,
+  "Roti": roti,
   // "Butter Roti": butterroti,
-  // "LachhaParatha": lachhaparatha,
-  // "Butter Nan": butternan,
-  // "Garlic Naan": garlicnaan,
-  // "Cheese Nan": cheesenan,
-  // "Plain Nan": plainnan,
-  // "Aloo Paratha": alooparatha,
-  // "Mix Kulcha": mixkulcha,
-  // "Butter Kulcha": butterkulcha,
+  "LachhaParatha": lachhaparatha,
+  "Butter Nan": butternan,
+  "Garlic Naan": garlicnaan,
+  "Cheese Nan": cheesenan,
+  "Plain Nan": plainnan,
+  "Aloo Paratha": alooparatha,
+  "Mix Kulcha": mixkulcha,
+  "Butter Kulcha": butterkulcha,
   // "Paneer Kulcha": paneerkulcha,
   // "Plain Kulcha": plainkulcha,
 
