@@ -171,7 +171,7 @@ import chickenpahadikabab from "../assets/nonveg/chickenpahadikabab.jpeg";
 
 // Snacks Non-Veg
 import chickenoilroast from "../assets/nonveg/chickenoilroast.jpeg";
-import chickenblackpepper from "../assets/nonveg/chickenblackpepper.jpeg";
+import Chickenblackpepper from "../assets/nonveg/Chickenblackpepper.jpeg";
 import chickengravyroast from "../assets/nonveg/chickengravyroast.jpeg";
 import muttonbhuna from "../assets/nonveg/muttonbhuna.jpeg";
 import muttonroast from "../assets/nonveg/muttonroast.jpeg";
@@ -313,7 +313,7 @@ export const menuImages = {
 
   /* ---------- SNACKS NON-VEG ---------- */
   "Chicken Oil Roast": chickenoilroast,
-  "Chicken Black Pepper": chickenblackpepper,
+  "Chicken Black Pepper": Chickenblackpepper,
   "Chicken Gravy Roast": chickengravyroast,
   "Mutton Bhuna": muttonbhuna,
   "Mutton Roast": muttonroast,
