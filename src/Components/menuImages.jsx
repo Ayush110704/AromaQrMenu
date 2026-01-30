@@ -196,21 +196,21 @@ import chickendopyaza from "../assets/nonveg/chickendopyaza.jpeg";
 // // Main Course Mutton
 import muttoncurry from "../assets/nonveg/muttoncurry.jpeg";
 import muttonraganjosh from "../assets/nonveg/muttonraganjosh.jpeg";
-// import muttonmasala from "../assets/nonveg/muttonmasala.jpeg";
-// import muttonbhunamain from "../assets/nonveg/muttonbhunamain.jpeg";
-// import muttonkadhai from "../assets/nonveg/muttonkadhai.jpeg";
-// import muttonsaoji from "../assets/nonveg/muttonsaoji.jpeg";
-// import muttonhyderabadi from "../assets/nonveg/muttonhyderabadi.jpeg";
-// import muttonafgani from "../assets/nonveg/muttonafgani.jpeg";
-// import muttonhandifull from "../assets/nonveg/muttonhandifull.jpeg";
-// import muttonhandihalf from "../assets/nonveg/muttonhandihalf.jpeg";
+import muttonmasala from "../assets/nonveg/muttonmasala.jpeg";
+import muttonbhunamain from "../assets/nonveg/muttonbhunamain.jpeg";
+import muttonkadhai from "../assets/nonveg/muttonkadhai.jpeg";
+import muttonsaoji from "../assets/nonveg/muttonsaoji.jpeg";
+import muttonhyderabadi from "../assets/nonveg/muttonhyderabadi.jpeg";
+import muttonafgani from "../assets/nonveg/muttonafgani.jpeg";
+import muttonhandifull from "../assets/nonveg/muttonhandifull.jpeg";
+import muttonhandihalf from "../assets/nonveg/muttonhandihalf.jpeg";
 
 // // Egg & Dal Non-Veg
-// import eggcurry from "../assets/nonveg/eggcurry.jpeg";
-// import eggmasala from "../assets/nonveg/eggmasala.jpeg";
-// import eggbhurji from "../assets/nonveg/eggbhurji.jpeg";
-// import eggbhurjicurry from "../assets/nonveg/eggbhurjicurry.jpeg";
-// import boilegg from "../assets/nonveg/boilegg.jpeg";
+import eggcurry from "../assets/nonveg/eggcurry.jpeg";
+import eggmasala from "../assets/nonveg/eggmasala.jpeg";
+import eggbhurji from "../assets/nonveg/eggbhurji.jpeg";
+import eggbhurjicurry from "../assets/nonveg/eggbhurjicurry.jpeg";
+import boilegg from "../assets/nonveg/boilegg.jpeg";
 // import eggomellete from "../assets/nonveg/eggomellete.jpeg";
 // import dalmughlainonveg from "../assets/nonveg/dalmughlainonveg.jpeg";
 
@@ -389,21 +389,21 @@ export const menuImages = {
   /* ---------- MAIN COURSE MUTTON ---------- */
   "Mutton Curry": muttoncurry,
   "Mutton Ragan Josh": muttonraganjosh,
-  // "Mutton Masala": muttonmasala,
-  // "Mutton Bhuna": muttonbhunamain,
-  // "Mutton Kadhai": muttonkadhai,
-  // "Mutton Saoji": muttonsaoji,
-  // "Mutton Hyderabadi": muttonhyderabadi,
-  // "Mutton Afgani": muttonafgani,
-  // "Mutton Handi (F)": muttonhandifull,
-  // "Mutton Handi (H)": muttonhandihalf,
+  "Mutton Masala": muttonmasala,
+  "Mutton Bhuna": muttonbhunamain,
+  "Mutton Kadhai": muttonkadhai,
+  "Mutton Saoji": muttonsaoji,
+  "Mutton Hyderabadi": muttonhyderabadi,
+  "Mutton Afgani": muttonafgani,
+  "Mutton Handi (F)": muttonhandifull,
+  "Mutton Handi (H)": muttonhandihalf,
 
   // /* ---------- EGG & DAL ---------- */
-  // "Egg Curry": eggcurry,
-  // "Egg Masala": eggmasala,
-  // "Egg Bhurji": eggbhurji,
-  // "Egg Bhurji Curry": eggbhurjicurry,
-  // "Boil Egg": boilegg,
+  "Egg Curry": eggcurry,
+  "Egg Masala": eggmasala,
+  "Egg Bhurji": eggbhurji,
+  "Egg Bhurji Curry": eggbhurjicurry,
+  "Boil Egg": boilegg,
   // "Egg Omellete": eggomellete,
   // "Plain Dal": plaindal,
   // "Jira Dal": jiradal,
