@@ -182,20 +182,20 @@ import fishfry from "../assets/nonveg/fishfry.jpeg";
 import chickenaromasp from "../assets/nonveg/chickenaromasp.jpeg";
 import chickenhandi from "../assets/nonveg/chickenhandi.jpeg";
 import chickenmasala from "../assets/nonveg/chickenmasala.jpeg";
-// import butterchicken from "../assets/nonveg/butterchicken.jpeg";
-// import chickenafgani from "../assets/nonveg/chickenafgani.jpeg";
-// import chickenkolhapuri from "../assets/nonveg/chickenkolhapuri.jpeg";
-// import chickenpatiyala from "../assets/nonveg/chickenpatiyala.jpeg";
-// import chickenbhuna from "../assets/nonveg/chickenbhuna.jpeg";
-// import chickentikkamasala from "../assets/nonveg/chickentikkamasala.jpeg";
-// import chickenroast from "../assets/nonveg/chickenroast.jpeg";
-// import chickencurry from "../assets/nonveg/chickencurry.jpeg";
-// import chickenshahikorma from "../assets/nonveg/chickenshahikorma.jpeg";
-// import chickendopyaza from "../assets/nonveg/chickendopyaza.jpeg";
+import butterchicken from "../assets/nonveg/butterchicken.jpeg";
+import chickenafgani from "../assets/nonveg/chickenafgani.jpeg";
+import chickenkolhapuri from "../assets/nonveg/chickenkolhapuri.jpeg";
+import chickenpatiyala from "../assets/nonveg/chickenpatiyala.jpeg";
+import chickenbhuna from "../assets/nonveg/chickenbhuna.jpeg";
+import chickentikkamasala from "../assets/nonveg/chickentikkamasala.jpeg";
+import chickenroast from "../assets/nonveg/chickenroast.jpeg";
+import chickencurry from "../assets/nonveg/chickencurry.jpeg";
+import chickenshahikorma from "../assets/nonveg/chickenshahikorma.jpeg";
+import chickendopyaza from "../assets/nonveg/chickendopyaza.jpeg";
 
 // // Main Course Mutton
-// import muttoncurry from "../assets/nonveg/muttoncurry.jpeg";
-// import muttonraganjosh from "../assets/nonveg/muttonraganjosh.jpeg";
+import muttoncurry from "../assets/nonveg/muttoncurry.jpeg";
+import muttonraganjosh from "../assets/nonveg/muttonraganjosh.jpeg";
 // import muttonmasala from "../assets/nonveg/muttonmasala.jpeg";
 // import muttonbhunamain from "../assets/nonveg/muttonbhunamain.jpeg";
 // import muttonkadhai from "../assets/nonveg/muttonkadhai.jpeg";
@@ -375,20 +375,20 @@ export const menuImages = {
   "Chicken Aroma Sp.": chickenaromasp,
   "Chicken Handi": chickenhandi,
   "Chicken Masala": chickenmasala,
-  // "Butter Chicken": butterchicken,
-  // "Chicken Afgani": chickenafgani,
-  // "Chicken Kolhapuri": chickenkolhapuri,
-  // "Chicken Patiyala": chickenpatiyala,
-  // "Chicken Bhuna": chickenbhuna,
-  // "Chicken Tikka Masala": chickentikkamasala,
-  // "Chicken Roast": chickenroast,
-  // "Chicken Curry": chickencurry,
-  // "Chicken Shahi Korma": chickenshahikorma,
-  // "Chicken Do-Pyaza": chickendopyaza,
+  "Butter Chicken": butterchicken,
+  "Chicken Afgani": chickenafgani,
+  "Chicken Kolhapuri": chickenkolhapuri,
+  "Chicken Patiyala": chickenpatiyala,
+  "Chicken Bhuna": chickenbhuna,
+  "Chicken Tikka Masala": chickentikkamasala,
+  "Chicken Roast": chickenroast,
+  "Chicken Curry": chickencurry,
+  "Chicken Shahi Korma": chickenshahikorma,
+  "Chicken Do-Pyaza": chickendopyaza,
 
-  // /* ---------- MAIN COURSE MUTTON ---------- */
-  // "Mutton Curry": muttoncurry,
-  // "Mutton Ragan Josh": muttonraganjosh,
+  /* ---------- MAIN COURSE MUTTON ---------- */
+  "Mutton Curry": muttoncurry,
+  "Mutton Ragan Josh": muttonraganjosh,
   // "Mutton Masala": muttonmasala,
   // "Mutton Bhuna": muttonbhunamain,
   // "Mutton Kadhai": muttonkadhai,
