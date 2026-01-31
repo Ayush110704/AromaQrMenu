@@ -208,7 +208,7 @@ export default function FullMenu() {
 
   const increaseQty = (category, item) => {
     const key = getKey(category, item);
-    setQtyMap((prev) => ({ ...prev, [key]: (prev[key] || 0) + 1 }));
+    setQtyMap((prev) => ({ ...prev, [key]: (prev[key] ?? 1) + 1 }));
   };
 
   const decreaseQty = (category, item) => {
