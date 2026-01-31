@@ -96,6 +96,20 @@ export default function AdminPanel() {
       });
     }
 
+    // ✅ Sort orders: NEW ones (hasNewItems=true) first, then others
+    list.sort((a, b) => {
+      const aIsNew = a.hasNewItems && normalize(a.status) !== "completed";
+      const bIsNew = b.hasNewItems && normalize(b.status) !== "completed";
+      
+      if (aIsNew && !bIsNew) return -1; // a comes first
+      if (!aIsNew && bIsNew) return 1;  // b comes first
+      
+      // If both are NEW or both are NOT NEW, sort by latest timestamp
+      const aTime = new Date(a.lastUpdated || a.time || 0);
+      const bTime = new Date(b.lastUpdated || b.time || 0);
+      return bTime - aTime; // latest first
+    });
+
     return list;
   }, [orders, filterStatus, searchText]);
 
@@ -246,6 +260,13 @@ export default function AdminPanel() {
                 </span>
               </p>
               
+              <p className="text-sm font-semibold text-gray-500">
+                NEW Orders:{" "}
+                <span className="text-red-600 font-extrabold">
+                  {orders.filter(o => o.hasNewItems && normalize(o.status) !== "completed").length}
+                </span>
+              </p>
+              
               {loginTime && (
                 <p className="text-sm font-semibold text-gray-500">
                   Login Time:{" "}
@@ -311,6 +332,17 @@ export default function AdminPanel() {
             >
               Completed
             </button>
+            
+            <button
+              onClick={() => setFilterStatus("new")}
+              className={`px-4 py-2 rounded-xl font-bold transition ${
+                filterStatus === "new"
+                  ? "bg-red-600 text-white"
+                  : "bg-gray-100 hover:bg-gray-200"
+              }`}
+            >
+              NEW Orders
+            </button>
           </div>
 
           <div className="flex items-center gap-2">
@@ -346,8 +378,12 @@ export default function AdminPanel() {
                   key={order.id}
                   onClick={() => openOrder(order.id)}
                   className={`bg-white shadow rounded-2xl p-5 border cursor-pointer transition hover:shadow-lg ${
-                    isCompleted ? "border-green-200" : "border-orange-200"
-                  }`}
+                    showNew 
+                      ? "border-red-300 border-2" 
+                      : isCompleted 
+                        ? "border-green-200" 
+                        : "border-orange-200"
+                  } ${showNew ? 'ring-2 ring-red-400' : ''}`}
                 >
                   <div className="flex items-start justify-between gap-3">
                     <div>
@@ -456,6 +492,12 @@ export default function AdminPanel() {
                 </div>
 
                 <div className="flex items-center gap-3">
+                  {activeOrder.hasNewItems && normalize(activeOrder.status) !== "completed" && (
+                    <span className="px-3 py-1 rounded-full bg-red-600 text-white text-xs font-extrabold animate-pulse">
+                      NEW ✨
+                    </span>
+                  )}
+                  
                   <span
                     className={`px-4 py-2 rounded-full text-xs font-extrabold ${
                       normalize(activeOrder.status) === "completed"

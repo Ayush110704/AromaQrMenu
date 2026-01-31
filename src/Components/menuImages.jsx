@@ -133,14 +133,14 @@ import paneerkulcha from "../assets/veg/paneerkulcha.jpeg";
 import plainkulcha from "../assets/veg/plainkulcha.jpeg";
 
 // // Rice Veg
-// import plainrice from "../assets/veg/plainrice.jpeg";
-// import jeerarice from "../assets/veg/jeerarice.jpeg";
-// import vegpulao from "../assets/veg/vegpulao.jpeg";
-// import vegbiryani from "../assets/veg/vegbiryani.jpeg";
-// import greenpeaspulao from "../assets/veg/greenpeaspulao.jpeg";
-// import paneerpulao from "../assets/veg/paneerpulao.jpeg";
-// import namdevrice from "../assets/veg/namdevrice.jpeg";
-// import dalkhichadi from "../assets/veg/dalkhichadi.jpeg";
+import plainrice from "../assets/veg/plainrice.jpeg";
+import jeerarice from "../assets/veg/jeerarice.jpeg";
+import vegpulao from "../assets/veg/vegpulao.jpeg";
+import vegbiryani from "../assets/veg/vegbiryani.jpeg";
+import greenpeaspulao from "../assets/veg/greenpeaspulao.jpeg";
+import paneerpulao from "../assets/veg/paneerpulao.jpeg";
+import namdevrice from "../assets/veg/namdevrice.jpeg";
+import dalkhichadi from "../assets/veg/dalkhichadi.jpeg";
 
 /* ================= NON-VEG IMAGES ================= */
 
@@ -215,14 +215,14 @@ import eggomellete from "../assets/nonveg/eggomellete.png";
 import dalmughlainonveg from "../assets/nonveg/dalmughlainonveg.jpeg";
 
 // // Rice Non-Veg
-// import chickenkashmiribiryani from "../assets/nonveg/chickenkashmiribiryani.jpeg";
-// import chickenbiryani from "../assets/nonveg/chickenbiryani.jpeg";
-// import chickenpulao from "../assets/nonveg/chickenpulao.jpeg";
-// import muttonbiryani from "../assets/nonveg/muttonbiryani.jpeg";
-// import muttonpulao from "../assets/nonveg/muttonpulao.jpeg";
-// import hyderabadibiryani from "../assets/nonveg/hyderabadibiryani.jpeg";
-// import eggbiryani from "../assets/nonveg/eggbiryani.jpeg";
-// import eggpulao from "../assets/nonveg/eggpulao.jpeg";
+import chickenkashmiribiryani from "../assets/nonveg/chickenkashmiribiryani.jpeg";
+import chickenbiryani from "../assets/nonveg/chickenbiryani.jpeg";
+import chickenpulao from "../assets/nonveg/chickenpulao.jpeg";
+import muttonbiryani from "../assets/nonveg/muttonbiryani.jpeg";
+import muttonpulao from "../assets/nonveg/muttonpulao.jpeg";
+import hyderabadibiryani from "../assets/nonveg/hyderabadibiryani.jpeg";
+import eggbiryani from "../assets/nonveg/eggbiryani.jpeg";
+import eggpulao from "../assets/nonveg/eggpulao.jpeg";
 
 /* =====================================================
    IMAGE MAP (ALL MENU ITEMS)
@@ -428,20 +428,20 @@ export const menuImages = {
   "Plain Kulcha": plainkulcha,
 
   // /* ---------- RICE ---------- */
-  // "Plain Rice": plainrice,
-  // "Jeera Rice": jeerarice,
-  // "Veg Pulao": vegpulao,
-  // "Veg Biryani": vegbiryani,
-  // "Green Peas Pulao": greenpeaspulao,
-  // "Paneer Pulao": paneerpulao,
-  // "Namdev Rice": namdevrice,
-  // "Dal Khichadi": dalkhichadi,
-  // "Chicken Kashmiri Biryani": chickenkashmiribiryani,
-  // "Chicken Biryani": chickenbiryani,
-  // "Chicken Pulao": chickenpulao,
-  // "Mutton Biryani": muttonbiryani,
-  // "Mutton Pulao": muttonpulao,
-  // "Hyderabadi Biryani": hyderabadibiryani,
-  // "Egg Biryani": eggbiryani,
-  // "Egg Pulao": eggpulao,
+  "Plain Rice": plainrice,
+  "Jeera Rice": jeerarice,
+  "Veg Pulao": vegpulao,
+  "Veg Biryani": vegbiryani,
+  "Green Peas Pulao": greenpeaspulao,
+  "Paneer Pulao": paneerpulao,
+  "Namdev Rice": namdevrice,
+  "Dal Khichadi": dalkhichadi,
+  "Chicken Kashmiri Biryani": chickenkashmiribiryani,
+  "Chicken Biryani": chickenbiryani,
+  "Chicken Pulao": chickenpulao,
+  "Mutton Biryani": muttonbiryani,
+  "Mutton Pulao": muttonpulao,
+  "Hyderabadi Biryani": hyderabadibiryani,
+  "Egg Biryani": eggbiryani,
+  "Egg Pulao": eggpulao,
 };

@@ -145,13 +145,21 @@ export default function Checkout() {
 
       // ✅ table engaged
       if (runningOnTable) {
-        const sameName =
-          String(runningOnTable.name || "")
-            .trim()
-            .toLowerCase() === name.trim().toLowerCase();
+        // ✅ Check if it's the SAME CUSTOMER by checking ALL THREE: name, contact, AND tableNo
+        const sameName = 
+          String(runningOnTable.name || "").trim().toLowerCase() === 
+          name.trim().toLowerCase();
+        
+        const sameContact = 
+          String(runningOnTable.contact || "").trim() === 
+          contact.trim();
+        
+        const sameTableNo =
+          String(runningOnTable.tableNo || "").trim() ===
+          tableNo.trim();
 
-        // ✅ same customer => add items
-        if (sameName) {
+        // ✅ same customer => add items (must match ALL THREE: name, contact, AND tableNo)
+        if (sameName && sameContact && sameTableNo) {
           const index = allOrders.findIndex((o) => o.id === runningOnTable.id);
 
           const mergedItems = mergeItems(runningOnTable.items || [], cart);
@@ -201,7 +209,7 @@ export default function Checkout() {
           return;
         }
 
-        // ❌ not same customer
+        // ❌ NOT the same customer (different name OR different contact OR different table)
         setLoading(false);
         Swal.fire({
           icon: "warning",

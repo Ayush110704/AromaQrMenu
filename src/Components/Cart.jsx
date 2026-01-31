@@ -81,16 +81,28 @@ export default function Cart() {
     // ✅ Latest order = last one
     const latest = matchedOrders[matchedOrders.length - 1];
 
+    // ✅ Get status from orderStep if status is not Completed
+    let displayStatus = latest.status;
+    if (latest.status !== "Completed" && latest.orderStep) {
+      if (latest.orderStep === "preparing") {
+        displayStatus = "Preparing 👨‍🍳";
+      } else if (latest.orderStep === "onTable2Min") {
+        displayStatus = "2 min Order is on Table ⏱️✅";
+      }
+    }
+
     setStatusResult({
       found: true,
       name: latest.name,
       tableNo: latest.tableNo,
-      status: latest.status,
+      status: displayStatus, // Use the calculated display status
       time: latest.time,
       orderId: latest.id,
+      rawStatus: latest.status, // Keep original status
+      orderStep: latest.orderStep, // Keep orderStep
     });
 
-    showSuccess(`Status: ${latest.status} ✅`);
+    showSuccess(`Status: ${displayStatus} ✅`);
   };
 
   // ✅ Framer Motion Variants
@@ -373,10 +385,12 @@ export default function Cart() {
                 ) : (
                   <div
                     className={`p-4 rounded-xl border font-bold ${
-                      statusResult.status === "Completed"
+                      statusResult.status === "Completed" || statusResult.rawStatus === "Completed"
                         ? "bg-green-50 border-green-200 text-green-700"
-                        : statusResult.status === "On Table in 2 mins"
+                        : statusResult.status.includes("2 min") || statusResult.orderStep === "onTable2Min"
                         ? "bg-blue-50 border-blue-200 text-blue-700"
+                        : statusResult.status.includes("Preparing") || statusResult.orderStep === "preparing"
+                        ? "bg-orange-50 border-orange-200 text-orange-700"
                         : "bg-orange-50 border-orange-200 text-orange-700"
                     }`}
                   >
