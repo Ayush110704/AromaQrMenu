@@ -13,6 +13,8 @@ export default function AdminPanel() {
   const [filterStatus, setFilterStatus] = useState("all");
 
   const [billOrderId, setBillOrderId] = useState(null);
+  const [loginTime, setLoginTime] = useState(null);
+  const [logoutTime, setLogoutTime] = useState(null);
 
   const loadOrders = () => {
     const all = JSON.parse(localStorage.getItem("orders")) || [];
@@ -20,11 +22,49 @@ export default function AdminPanel() {
   };
 
   useEffect(() => {
+    // Set login time when component mounts
+    const now = new Date();
+    const formattedTime = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+    const formattedDate = now.toLocaleDateString();
+    setLoginTime(`${formattedDate} ${formattedTime}`);
+    
     loadOrders();
     const onStorage = () => loadOrders();
     window.addEventListener("storage", onStorage);
-    return () => window.removeEventListener("storage", onStorage);
+    
+    return () => {
+      window.removeEventListener("storage", onStorage);
+    };
   }, []);
+
+  const handleLogout = () => {
+    // Set logout time before logging out
+    const now = new Date();
+    const formattedTime = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+    const formattedDate = now.toLocaleDateString();
+    setLogoutTime(`${formattedDate} ${formattedTime}`);
+    
+    // Show logout confirmation with times
+    Swal.fire({
+      title: "Logout?",
+      html: `<div class="text-left">
+              <p class="mb-2"><strong>Login Time:</strong> ${loginTime}</p>
+              <p class="mb-4"><strong>Logout Time:</strong> ${formattedDate} ${formattedTime}</p>
+              <p>Are you sure you want to logout?</p>
+            </div>`,
+      icon: "question",
+      showCancelButton: true,
+      confirmButtonText: "Yes, Logout",
+      cancelButtonText: "Cancel",
+      confirmButtonColor: "#dc2626",
+      cancelButtonColor: "#6b7280",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        localStorage.removeItem("adminLoggedIn");
+        navigate("/admin-login");
+      }
+    });
+  };
 
   const normalize = (val) => String(val || "").toLowerCase().trim();
 
@@ -194,31 +234,41 @@ export default function AdminPanel() {
               Admin Panel 👨‍🍳
             </h1>
 
-            <p className="text-sm font-semibold text-gray-500 mt-1">
-              Pending:{" "}
-              <span className="text-orange-600 font-extrabold">
-                {pendingCount}
-              </span>{" "}
-              • Completed:{" "}
-              <span className="text-green-700 font-extrabold">
-                {completedCount}
-              </span>
-            </p>
+            <div className="flex flex-wrap items-center gap-4 mt-2">
+              <p className="text-sm font-semibold text-gray-500">
+                Pending:{" "}
+                <span className="text-orange-600 font-extrabold">
+                  {pendingCount}
+                </span>{" "}
+                • Completed:{" "}
+                <span className="text-green-700 font-extrabold">
+                  {completedCount}
+                </span>
+              </p>
+              
+              {loginTime && (
+                <p className="text-sm font-semibold text-gray-500">
+                  Login Time:{" "}
+                  <span className="text-blue-600 font-extrabold">
+                    {loginTime}
+                  </span>
+                </p>
+              )}
+              
+              {logoutTime && (
+                <p className="text-sm font-semibold text-gray-500">
+                  Last Logout:{" "}
+                  <span className="text-purple-600 font-extrabold">
+                    {logoutTime}
+                  </span>
+                </p>
+              )}
+            </div>
           </div>
 
           <div className="flex gap-3">
             <button
-              onClick={() => navigate("/menu")}
-              className="px-5 py-2 rounded-xl font-bold bg-gray-200 hover:bg-gray-300 transition"
-            >
-              Go Menu 🍽️
-            </button>
-
-            <button
-              onClick={() => {
-                localStorage.removeItem("adminLoggedIn");
-                navigate("/admin-login");
-              }}
+              onClick={handleLogout}
               className="px-5 py-2 rounded-xl font-bold bg-red-600 text-white hover:bg-red-700 transition"
             >
               Logout 🚪

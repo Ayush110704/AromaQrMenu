@@ -120,7 +120,7 @@ import dalmughlai from "../assets/veg/dalmughlai.jpeg";
 
 // // Roti
 import roti from "../assets/veg/roti.jpeg";
-// import butterroti from "../assets/veg/butterroti.jpeg";
+import butterroti from "../assets/veg/butterroti.jpeg";
 import lachhaparatha from "../assets/veg/lachhaparatha.jpeg";
 import butternan from "../assets/veg/butternan.jpeg";
 import garlicnaan from "../assets/veg/garlicnaan.jpeg";
@@ -129,8 +129,8 @@ import plainnan from "../assets/veg/plainnan.jpeg";
 import alooparatha from "../assets/veg/alooparatha.jpeg";
 import mixkulcha from "../assets/veg/mixkulcha.jpeg";
 import butterkulcha from "../assets/veg/butterkulcha.jpeg";
-// import paneerkulcha from "../assets/veg/paneerkulcha.jpeg";
-// import plainkulcha from "../assets/veg/plainkulcha.jpeg";
+import paneerkulcha from "../assets/veg/paneerkulcha.jpeg";
+import plainkulcha from "../assets/veg/plainkulcha.jpeg";
 
 // // Rice Veg
 // import plainrice from "../assets/veg/plainrice.jpeg";
@@ -415,7 +415,7 @@ export const menuImages = {
 
   // /* ---------- ROTI ---------- */
   "Roti": roti,
-  // "Butter Roti": butterroti,
+  "Butter Roti": butterroti,
   "LachhaParatha": lachhaparatha,
   "Butter Nan": butternan,
   "Garlic Naan": garlicnaan,
@@ -424,8 +424,8 @@ export const menuImages = {
   "Aloo Paratha": alooparatha,
   "Mix Kulcha": mixkulcha,
   "Butter Kulcha": butterkulcha,
-  // "Paneer Kulcha": paneerkulcha,
-  // "Plain Kulcha": plainkulcha,
+  "Paneer Kulcha": paneerkulcha,
+  "Plain Kulcha": plainkulcha,
 
   // /* ---------- RICE ---------- */
   // "Plain Rice": plainrice,

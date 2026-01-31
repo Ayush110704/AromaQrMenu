@@ -6,15 +6,21 @@ export default function AdminLogin() {
   const navigate = useNavigate();
 
   const [adminId, setAdminId] = useState("");
+  const [adminEmail, setAdminEmail] = useState(""); // ✅ Added
   const [adminPass, setAdminPass] = useState("");
 
   const handleLogin = async (e) => {
     e.preventDefault();
 
     const ADMIN_ID = "Ayush";
+    const ADMIN_EMAIL = "ayushsengar@gmail.com"; // ✅ saved email
     const ADMIN_PASS = "1234";
 
-    if (adminId === ADMIN_ID && adminPass === ADMIN_PASS) {
+    if (
+      adminId === ADMIN_ID &&
+      adminEmail === ADMIN_EMAIL &&
+      adminPass === ADMIN_PASS
+    ) {
       localStorage.setItem("isAdminLoggedIn", "true");
 
       // ✅ Notify navbar (custom event)
@@ -34,7 +40,7 @@ export default function AdminLogin() {
       Swal.fire({
         icon: "error",
         title: "Login Failed ❌",
-        text: "Wrong Admin ID or Password",
+        text: "Wrong Admin ID, Email or Password",
         confirmButtonText: "Try Again",
         confirmButtonColor: "#f97316",
       });
@@ -53,6 +59,8 @@ export default function AdminLogin() {
           </p>
 
           <form onSubmit={handleLogin} className="mt-6 space-y-4">
+            
+            {/* Admin ID */}
             <div>
               <label className="font-semibold text-gray-800">Admin ID</label>
               <input
@@ -63,6 +71,19 @@ export default function AdminLogin() {
               />
             </div>
 
+            {/* ✅ Email Added */}
+            <div>
+              <label className="font-semibold text-gray-800">Email</label>
+              <input
+                value={adminEmail}
+                onChange={(e) => setAdminEmail(e.target.value)}
+                placeholder="Enter email"
+                type="email"
+                className="mt-2 w-full border border-gray-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-orange-500"
+              />
+            </div>
+
+            {/* Password */}
             <div>
               <label className="font-semibold text-gray-800">Password</label>
               <input
@@ -92,6 +113,7 @@ export default function AdminLogin() {
                 Back to Menu 🍽️
               </Link>
             </div>
+
           </form>
         </div>
       </div>

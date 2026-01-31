@@ -83,6 +83,8 @@ export default function Cart() {
 
     setStatusResult({
       found: true,
+      name: latest.name,
+      tableNo: latest.tableNo,
       status: latest.status,
       time: latest.time,
       orderId: latest.id,
@@ -378,11 +380,34 @@ export default function Cart() {
                         : "bg-orange-50 border-orange-200 text-orange-700"
                     }`}
                   >
-                    Status: {statusResult.status} ✅ <br />
-                    <span className="text-sm font-semibold text-gray-700">
-                      Order ID: {statusResult.orderId} <br />
-                      Time: {statusResult.time}
-                    </span>
+                    <div className="space-y-2">
+                      <div className="flex items-center gap-2">
+                        <span className="text-lg">Status:</span>
+                        <span className="text-lg">{statusResult.status} ✅</span>
+                      </div>
+                      
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-2 text-sm font-semibold text-gray-700 mt-3">
+                        <div className="flex items-center gap-2">
+                          <span className="text-gray-600">👤 Customer:</span>
+                          <span className="font-bold">{statusResult.name}</span>
+                        </div>
+                        
+                        <div className="flex items-center gap-2">
+                          <span className="text-gray-600">🍽️ Table No:</span>
+                          <span className="font-bold">{statusResult.tableNo}</span>
+                        </div>
+                        
+                        <div className="flex items-center gap-2">
+                          <span className="text-gray-600">🆔 Order ID:</span>
+                          <span className="font-bold">{statusResult.orderId}</span>
+                        </div>
+                        
+                        <div className="flex items-center gap-2">
+                          <span className="text-gray-600">🕒 Time:</span>
+                          <span className="font-bold">{statusResult.time}</span>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 )}
               </motion.div>

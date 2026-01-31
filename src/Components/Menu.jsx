@@ -24,7 +24,7 @@ export const menuData = [
     type: "Veg",
     items: [
       { name: "Onion Salad", price: 10 },
-      { name: "Green Salad (H)", price: 40 },
+      // { name: "Green Salad (H)", price: 40 },
       { name: "Green Salad (F)", price: 70 },
     ],
   },
@@ -109,7 +109,7 @@ export const menuData = [
       { name: "Onion Pakoda", price: 130, type: "Veg" },
       { name: "Paneer Pakoda", price: 180, type: "Veg" },
       { name: "Cheese Pakoda", price: 190, type: "Veg" },
-      { name: "Cheese Cube", price: 50, type: "Veg" },
+      // { name: "Cheese Cube", price: 50, type: "Veg" },
       { name: "Finger Chips", price: 100, type: "Veg" },
       { name: "Green Peas Roast", price: 100, type: "Veg" },
       { name: "Chana Masala", price: 130, type: "Veg" },
